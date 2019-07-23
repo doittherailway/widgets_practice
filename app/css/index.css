@@ -1,0 +1,122 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+
+.clock-div {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    width: 40%;
+    align-items: center;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.clock-div p {
+    padding-top: 10px;
+}
+
+.tab-div {
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 3px;
+    border: 2px solid black;
+    width: 40%;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab-ul {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.tab-ul :hover {
+    background-color: blue;
+    color: white;
+}
+
+.tab-header-selected {
+    font-weight: 800;
+}
+
+.tab-div article {
+    padding: 5px;
+}
+
+.auto-div {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: khaki;
+}
+
+.auto-div input {
+    border: 1px solid grey;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: lemonchiffon;
+}
+
+.auto-div li {
+    cursor: pointer;
+    /* margin-left: 20px; */
+}
